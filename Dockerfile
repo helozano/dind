@@ -116,7 +116,6 @@ ADD ./wrapdocker /usr/local/bin/wrapdocker
 RUN chmod +x /usr/local/bin/wrapdocker
 RUN ln -s /usr/local/bin/wrapdocker /usr/bin/wrapdocker
 RUN usermod -aG docker jenkins
-RUN usermod -aG jenkins docker
 # Define additional metadata for our image.
 VOLUME /var/lib/docker
 ENTRYPOINT ["wrapdocker"]
