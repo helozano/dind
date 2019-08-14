@@ -119,3 +119,4 @@ RUN usermod -aG docker jenkins
 # Define additional metadata for our image.
 VOLUME /var/lib/docker
 ENTRYPOINT ["wrapdocker"]
+CMD []
